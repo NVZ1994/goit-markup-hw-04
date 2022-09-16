@@ -3,7 +3,8 @@
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
   --primary-white-color: #ffffff;
-  --bacground-gray-color: #2f303a;
+  --background-gray-color: #2f303a;
+  --background-hero: rgba(47, 48, 58, 0.4);
   --address-color: rgba(255, 255, 255, 0.6);
   --secondary-bgr-color: #f5f4fa;
   --primary-border-color: #ececec;
@@ -93,6 +94,7 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+
 .link {
   padding: 32px 0;
   display: block;
@@ -100,15 +102,24 @@ ul {
 
 .phone-header {
   margin-left: 50px;
-  padding: 32px 0;
-  display: block;
   color: var(--contacts-color);
+  display: flex;
+  align-items: center;
 }
 
+
 .email {
-  padding: 32px 0;
-  display: block;
+  display: flex;
+  align-items: center;
   color: var(--contacts-color);
+}
+.auth-nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav-icon .icon {
+  margin-right: 10px;
 }
 
 .nav-link {
@@ -191,10 +202,19 @@ button:focus {
 }
 
 /* герой и кнопка в нем*/
+
 .section-hero {
-  background: var(--bacground-gray-color);
+  background-color: #C4C4C4;
   padding: 200px 0;
   text-align: center;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../images/herobg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+
 }
 
 .hero-container {
@@ -259,6 +279,16 @@ button:focus {
   margin-bottom: 10px;
 }
 
+.feature-icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bgr-color);
+}
+
 .feature-list .title {
   font-size: 14px;
   color: var(--title-text-color);
@@ -268,7 +298,6 @@ button:focus {
 }
 .feature-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
   flex-wrap: nowrap;
@@ -372,9 +401,29 @@ button:focus {
   color: var(--primary-text-color);
 }
 
+/* clients section */
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-icon {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--secondary-bgr-color);
+}
+
+
+
+
 /* footer style */
 footer {
-  background-color: var(--bacground-gray-color);
+  background-color: var(--background-gray-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
