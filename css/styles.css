@@ -417,3 +417,6 @@ footer .fact {
 .footer-email {
   margin: 9px 0;
 }
+.icon {
+  fill: var(--primary-text-color);
+}
