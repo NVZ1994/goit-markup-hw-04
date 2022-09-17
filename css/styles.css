@@ -103,14 +103,24 @@ ul {
 .phone-header {
   margin-left: 50px;
   padding: 32px 0;
-  display: block;
+  display: flex;
+  align-items: center;
   color: var(--contacts-color);
+}
+.email-icon,
+.phone-icon {
+  margin-right: 10px;
+}
+
+.auth-nav-list a:hover svg {
+  color: red;
 }
 
 .email {
   padding: 32px 0;
-  display: block;
   color: var(--contacts-color);
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
