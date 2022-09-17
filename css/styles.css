@@ -11,6 +11,7 @@
   --contacts-color: rgba(117, 117, 117, 1);
   --member-bcg-color: rgba(255, 255, 255, 1);
   --portfolio-bcg-color: rgba(245, 244, 250, 1);
+  --hero-bacground: #C4C4C4;
 }
 
 /* общее на всем доке */
@@ -113,7 +114,7 @@ ul {
 }
 
 .auth-nav-list a:hover svg {
-  color: red;
+  fill: #2196f3;
 }
 
 .email {
@@ -208,9 +209,14 @@ button:focus {
 
 /* герой и кнопка в нем*/
 .section-hero {
-  background: var(--bacground-gray-color);
+  background: var(--hero-bacground);
   padding: 200px 0;
   text-align: center;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/herobg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .hero-container {
