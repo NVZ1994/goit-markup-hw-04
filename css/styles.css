@@ -12,6 +12,7 @@
   --contacts-color: rgba(117, 117, 117, 1);
   --member-bcg-color: rgba(255, 255, 255, 1);
   --portfolio-bcg-color: rgba(245, 244, 250, 1);
+  --calm-icons-color: #AFB1B8;
 }
 
 /* общее на всем доке */
@@ -31,6 +32,9 @@ ul,
 p {
   margin: 0;
 }
+.icon {
+  fill: var(--calm-icons-color);
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -49,6 +53,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 a {
   color: var(--title-text-color);
   text-decoration: none;
@@ -98,7 +103,7 @@ ul {
   display: block;
 }
 
-.phone-header {
+.phone-icon {
   margin-left: 50px;
   color: var(--contacts-color);
   display: flex;
@@ -106,11 +111,13 @@ ul {
 }
 
 
-.email {
+.email-icon {
   display: flex;
   align-items: center;
   color: var(--contacts-color);
+  fill: red;
 }
+
 .auth-nav-icon {
   display: flex;
   align-items: center;
@@ -133,6 +140,7 @@ ul {
 .nav-link {
   display: block;
 }
+
 .nav-link:not(:first-child) {
   margin-left: 50px;
 }
@@ -183,12 +191,14 @@ button {
   border-radius: 4px;
   border: none;
 }
+
 .button-section {
   justify-content: center;
   display: flex;
   gap: 8px;
   margin-bottom: 50px;
 }
+
 .portfolio-btn {
   background-color: var(--portfolio-bcg-color);
 }
@@ -197,6 +207,7 @@ button {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -223,7 +234,7 @@ button:focus {
   text-align: center;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), url(../images/herobg.jpg);
+      rgba(47, 48, 58, 0.4)), url(../images/herobg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -249,7 +260,7 @@ button:focus {
   letter-spacing: 0.06em;
 }
 
-.hero-container > button {
+.hero-container>button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -311,12 +322,14 @@ button:focus {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .feature-list {
   display: flex;
   gap: 30px;
   justify-content: center;
   flex-wrap: nowrap;
 }
+
 .features-descr {
   line-height: 1.7;
 }
@@ -412,6 +425,7 @@ button:focus {
   border: 1px solid var(--secondary-border-color);
   border-top: none;
 }
+
 .descr {
   font-size: 16px;
   line-height: 1.875;
@@ -431,8 +445,7 @@ button:focus {
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
-  
-  background-color: var(--secondary-bgr-color);
+
 }
 
 
@@ -475,15 +488,46 @@ footer .fact {
   margin: 9px 0;
 }
 
-.work-list li:hover{
+.work-list li:hover {
   background: var(--primary-white-color);
   border: 1px solid var(--secondary-border-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .social {
   margin: 16px 32px 30px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.social-list {
+  display: flex;
+}
+
+
+.social {
+  margin: 16px 32px 30px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social>li>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+.icon {
+  fill: #AFB1B8;
+}
+
+.social>li>a:hover svg {
+  fill: #ffffff
 }
