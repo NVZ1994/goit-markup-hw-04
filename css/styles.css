@@ -297,6 +297,17 @@ button:focus {
   flex-wrap: nowrap;
 }
 
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--secondary-bgr-color) ;
+}
+
 .features-descr {
   line-height: 1.7;
 }
