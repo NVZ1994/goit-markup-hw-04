@@ -65,8 +65,8 @@ a {
   align-items: center;
 }
 
-.header {
-  border-bottom: 1px solid var(--border-color);
+header {
+  border-bottom: 1px solid var(--primary-border-color);
 }
 
 .logo {
