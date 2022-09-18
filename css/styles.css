@@ -11,8 +11,8 @@
   --contacts-color: rgba(117, 117, 117, 1);
   --member-bcg-color: rgba(255, 255, 255, 1);
   --portfolio-bcg-color: rgba(245, 244, 250, 1);
-  --hero-bacground: #C4C4C4;
-  --clients-list-border: 1px solid #AFB1B8;
+  --hero-bacground: #c4c4c4;
+  --clients-list-border: 1px solid #afb1b8;
 }
 
 /* общее на всем доке */
@@ -192,7 +192,8 @@ button {
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-btn {
@@ -211,7 +212,8 @@ button {
 }
 .work-list li:hover,
 .work-list li:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 button:hover,
@@ -225,7 +227,11 @@ button:focus {
   background: var(--hero-bacground);
   padding: 200px 0;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/herobg.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/herobg.jpg);
   background-repeat: no-repeat;
   background-size: 1600px 600px;
   background-position: center;
@@ -249,7 +255,7 @@ button:focus {
   letter-spacing: 0.06em;
 }
 
-.hero-container>button {
+.hero-container > button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -317,7 +323,7 @@ button:focus {
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background-color: var(--secondary-bgr-color) ;
+  background-color: var(--secondary-bgr-color);
 }
 
 .features-descr {
@@ -382,7 +388,8 @@ button:focus {
   background-color: var(--member-bcg-color);
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .member-social {
   display: flex;
@@ -407,12 +414,10 @@ button:focus {
   fill: var(--primary-white-color);
 }
 
-
 .social-icon {
   width: 20px;
   height: 20px;
 }
-
 
 /* должность */
 .job {
@@ -460,11 +465,11 @@ button:focus {
 }
 .clents-link {
   width: 170px;
-    height: 92px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: var(--clients-list-border);
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--clients-list-border);
   border-radius: 4px;
 }
 .clients-list:hover svg {
@@ -561,7 +566,7 @@ footer .fact {
   margin-left: 70px;
 }
 
-.footer-social >p{
+.footer-social > p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
