@@ -13,6 +13,7 @@
   --portfolio-bcg-color: rgba(245, 244, 250, 1);
   --hero-bacground: #c4c4c4;
   --clients-list-border: 1px solid #afb1b8;
+  --icons-color: #AFB1B8;
 }
 
 /* общее на всем доке */
@@ -202,7 +203,6 @@ button {
 
 .btn-sec {
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .work-list {
@@ -210,8 +210,12 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
-.work-list li:hover,
-.work-list li:focus {
+.cards {
+  display: block;
+}
+
+.cards:hover,
+.cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -227,13 +231,16 @@ button:focus {
   background: var(--hero-bacground);
   padding: 200px 0;
   text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/herobg.jpg);
   background-repeat: no-repeat;
-  background-size: 1600px 600px;
+  background-size: cover;
   background-position: center;
 }
 
@@ -279,7 +286,7 @@ button:focus {
 
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -355,7 +362,7 @@ button:focus {
 }
 
 .activities-item {
-  flex-basis: calc((100%-4 * 30px) / 3);
+  flex-basis: calc( (100%-4*30px)/3);
 }
 
 /* имена членов команды */
@@ -395,6 +402,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .member-social-link {
   display: flex;
@@ -521,7 +529,7 @@ footer .fact {
   margin: 9px 0;
 }
 .icon {
-  fill: var(--primary-text-color);
+  fill: var(--icons-color);
 }
 
 .social-link {
