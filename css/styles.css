@@ -162,10 +162,10 @@ ul {
   width: 100%;
   
   position: absolute;
-  height: 5px;
+  height: 4px;
   border-radius: 2px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   background-color: var(--accent-text-color);
 }
 
@@ -631,15 +631,11 @@ footer .fact {
   bottom: 0; 
 }
 
-
-
-
-
-
 .box {
   position: relative;
   overflow: hidden;
 }
+
 .overlay {
   position: absolute;
   bottom: 0;
@@ -652,7 +648,6 @@ footer .fact {
   color: var(--primary-white-color);
   padding: 63px 24px;
 }
-
 
 .cards:hover .overlay {
   transform: translateY(0);
